@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="card text-center">
+        <div class="card-header text-start fw-bold fs-4">
+
+            Payment for example
+        </div>
+        <div class=" card-body">
+            <div class="alert alert-danger " role="alert">
+                Some fiels are missing!
+            </div>
+
+            <form class="needs-validation" novalidate>
+
+                <div class="container-fluid ">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">Card #</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="Insert Card Number"
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom02" class="form-label">CVC #</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustomUsername" class="form-label">Amount</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">$</span>
+                                <input type="text" class="form-control" id="validationCustomUsername"
+                                    aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                    Please choose a username.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col">
+                            <label for="validationCustom01" class="form-label">First Name </label>
+                            <input type="text" class="form-control" id="validationCustom01" value="Insert Name"
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="validationCustom01" class="form-label">Last Name </label>
+                            <input type="text" class="form-control" id="validationCustom01" value="Insert Last Name"
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">City</label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="validationCustom04" class="form-label">State</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option>...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3">
+                            <label for="validationCustom05" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+
+                        <!-- Fila para "We accept" y "Message" -->
+                        <div class="row g-3 mt-2">
+
+                            <!-- Métodos de pago -->
+                            <div class="col-md-6">
+                                <label class="form-label d-block">We accept:</label>
+
+                                <div class="btn-group" role="group" aria-label="Payment methods">
+                                    <!-- VISA -->
+                                    <input type="radio" class="btn-check" name="payment-method" id="visa"
+                                        autocomplete="off" checked>
+                                    <label class="btn btn-outline-secondary btn-sm" for="visa">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"
+                                            height="16" alt="Visa">
+                                    </label>
+
+                                    <!-- Mastercard -->
+                                    <input type="radio" class="btn-check" name="payment-method" id="mastercard"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-secondary btn-sm" for="mastercard">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+                                            height="16" alt="Mastercard">
+                                    </label>
+
+
+                                </div>
+                            </div>
+
+                            <!-- Mensaje -->
+                            <div class="col-md-6">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" class="form-control" rows="3"
+                                    placeholder="Add any notes here."></textarea>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+
+
+                </div>
+            </form>
+        </div>
+
+
+
+
+        <div class="card-footer text-body-secondary d-flex justify-content-end mt-3">
+            <div class="btn-toolbar " role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-secondary">Cancel</button>
+                    <br>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>
